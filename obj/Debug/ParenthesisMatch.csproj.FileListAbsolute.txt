@@ -1,0 +1,5 @@
+C:\github\ParenthesisMatch\ParenthesisMatch\bin\Debug\ParenthesisMatch.dll
+C:\github\ParenthesisMatch\ParenthesisMatch\bin\Debug\ParenthesisMatch.pdb
+C:\github\ParenthesisMatch\ParenthesisMatch\obj\Debug\ParenthesisMatch.csproj.CoreCompileInputs.cache
+C:\github\ParenthesisMatch\ParenthesisMatch\obj\Debug\ParenthesisMatch.dll
+C:\github\ParenthesisMatch\ParenthesisMatch\obj\Debug\ParenthesisMatch.pdb
