@@ -16,7 +16,9 @@
 					opencount++;
 
 				if (inputValue[i] == SecondValuetoCompare)
-					closecount++;                                                                                                                                                                                                                                                                                     
+					closecount++;
+
+				if (closecount > opencount) return false;
 			}
 
 			if (opencount == closecount) return true;
