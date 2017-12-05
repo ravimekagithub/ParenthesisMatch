@@ -10,6 +10,8 @@
 		{
 			int opencount = 0, closecount = 0;
 
+			if (string.IsNullOrEmpty(inputValue)) return false;
+
 			for (var i = 0; i < inputValue.Length; i++)
 			{
 				if (inputValue[i] == FirstValuetoCompare)
