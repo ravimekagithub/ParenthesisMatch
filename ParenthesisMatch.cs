@@ -1,4 +1,6 @@
-﻿namespace ParenthesisMatch
+﻿using System.Linq;
+
+namespace ParenthesisMatch
 {
 	public class ParenthesisMatch
 	{
@@ -12,7 +14,7 @@
 
 			if (string.IsNullOrEmpty(inputValue)) return false;
 
-			if (inputValue.Contains("(") && inputValue.Contains(")"))
+			if (inputValue.Contains(FirstValuetoCompare) && inputValue.Contains(SecondValuetoCompare))
 
 			{
 				for (var i = 0; i < inputValue.Length; i++)
