@@ -12,22 +12,24 @@
 
 			if (string.IsNullOrEmpty(inputValue)) return false;
 
-			for (var i = 0; i < inputValue.Length; i++)
+			if (inputValue.Contains("(") && inputValue.Contains(")"))
+
 			{
-				if (inputValue[i] == FirstValuetoCompare)
-					opencount++;
+				for (var i = 0; i < inputValue.Length; i++)
+				{
+					if (inputValue[i] == FirstValuetoCompare)
+						opencount++;
 
-				if (inputValue[i] == SecondValuetoCompare)
-					closecount++;
+					if (inputValue[i] == SecondValuetoCompare)
+						closecount++;
 
-				if (closecount > opencount) return false;
+					if (closecount > opencount) return false;
+				}
+
+				if (opencount == closecount) return true;
 			}
 
-			if (opencount == closecount) return true;
-			                                               
 			return false;
 		}
-
-		
 	}
 }
